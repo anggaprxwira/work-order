@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORK ORDER</title>
+    <link rel="stylesheet" href="CSS/work-order.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div class="jumbotron">
+        <h1>Workorder Number : Sample-WO1033</h1>
+    </div>
+</head>
+<body>
+    <div class="content">
+        <div class="details-item">
+            <span>Vehicle Number:</span> NO63850237
+            <br><span>Vehicle name:</span> Sample Asset-5230
+            <br><span>Model:</span> 326F
+            <br><span>Meter Reading:</span> 1225555 Hours
+        </div>
+        <div class="details-item">
+            <span>Status:</span> <span class="notify"> On Hold</span>
+            <br><span>Priority:</span> Medium
+            <br><span>WO Type:</span> Safety
+        </div>
+        <div class="details-item">
+            <span>Start Date:</span> 08-Oct-2023 08:00 PM
+            <br><span>Due Date:</span> 08-Oct-2023 08:00 PM
+            <br><span>Completion Date:</span>
+            <br><span>Overdue:</span><span style="color: #00ba51;"> &#x1F4C5; 0 Days</span> 
+        </div>
+        <div class="details-item">
+            <span>Estimated Time:</span> 72H
+            <br><span>Total Time:</span> 0H 0M
+            <br><span>Time difference</span> &#x23F2; 72H 0M
+        </div>
+        <div class="details-item">
+            <span>Estimated Cost:</span> 20000 USD
+            <br><span>Total WO Cost:</span> 250.00 USD
+            <br><span>Cost difference:</span><span style="color: #00ba51;"> &#x24; 19750 USD</span>  
+        </div>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a class="tab-links active" onclick="openTravel(event, 'generaldetails')">GENERAL DETAILS</a></li>
+            <li><a class="tab-links" onclick="openTravel(event, 'taskdetails')">TASK DETAILS</a></li>
+            <li><a class="tab-links" onclick="openTravel(event, 'partsdetails')">PARTS DETAILS</a></li>
+            <li><a class="tab-links" onclick="openTravel(event, 'labordetails')">LABOR DETAILS</a></li>
+            <li><a class="tab-links" onclick="openTravel(event, 'additionalcost')">ADDITIONAL COST</a></li>
+            <li><a class="tab-links" onclick="openTravel(event, 'attachments')">ATTACHMENTS</a></li>
+            <li><a class="tab-links" onclick="openTravel(event, 'remark')">REMARK</a></li>
+            <li><a class="tab-links" onclick="openTravel(event, 'timelog')">TIME LOG</a></li>
+        </ul>
+    </nav>
+    <div id="generaldetails" class="nav-content" style="display: block;">
+        <h3>GENERAL DETAILS</h3>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+    </div>
+    <div id="taskdetails" class="nav-content">
+        <h3>TASK DETAILS</h3>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+    </div>
+    <div id="partsdetails" class="nav-content">
+        <h3>PARTS DETAILS</h3>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+    </div>
+    <div id="labordetails" class="nav-content">
+        <h3>LABOR DETAILS</h3>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+    </div>
+    <div id="additionalcost" class="nav-content">
+        <h3>ADDITIONAL COST</h3>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+    </div>
+    <div id="attachments" class="nav-content">
+        <h3>ATTACHMENTS</h3>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+    </div>
+    <div id="remark" class="nav-content">
+        <h3>REMARK</h3>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+    </div>
+    <div id="timelog" class="nav-content">
+        <h3>TIME LOG</h3>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+    </div>
+    <script src="JSON/script.js"></script>
+</body>
+<footer>
+    <a href="ASSETS/downloadtester.png" download="downloadtester.png">
+    <button class="btn" type="button" data-download=""><i class="fa fa-download"></i></a> Download</button>
+    <button class="btn-edit">Edit</button>
+    <button class="btn-exit" onclick="location.href='about:blank'">Exit</button>
+    </a>
+</footer>
+</html>
