@@ -54,28 +54,31 @@ body {
 
 nav {
     background-color: #d6eaf8;
-    padding: 1px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: solid #ccc;
 }
 
 nav a {
     font-size: 15px;
-    font-weight: 400;
     text-decoration: none;
     color: grey;
-    border-bottom: 2px solid transparent;
-    transition: border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent;  
+    white-space: nowrap;
 }
 
 nav a:hover {
-    font-weight: bold;
-    border-bottom: 2px solid darkblue;
+    border-bottom: 4px solid #4e505b;
+    padding: 15px;
+}
+
+nav a.active {
+    border-bottom: 4px solid #4e505b;
+    padding: 15px;
 }
   
 nav ul {
     padding-inline: 4rem;
     display: flex;
-    gap: 65px;
+    gap: 95px;
     justify-content: center;
 }
 
@@ -91,7 +94,7 @@ nav li {
 footer {
     padding: 10px;
     color: white;
-    background-color: darkblue;
+    background-color: #4e505b;
     margin-top: auto;
     display: flex;
     flex-wrap: wrap;

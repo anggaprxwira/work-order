@@ -1,0 +1,161 @@
+.jumbotron {
+    text-align: center;
+    color: black;
+    border-bottom: 1px solid grey;
+  }
+
+  .content {
+    display: flex;
+    gap: 110px;
+    justify-content: center;
+    padding: 10px;
+    white-space: nowrap;
+  }
+
+  .details {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+
+  .details .details-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+  .details .details-item span {
+    font-weight: bold;
+  }
+
+  section {
+    display: flex;
+    gap: 250px;
+    padding: 10px;
+    padding-left: 70px;
+  }
+
+  .details-item .notify {
+    color: #f8dd4c;
+    font-weight: bold;
+  }
+
+  nav {
+    background-color: #d6eaf8;
+    border-bottom: solid #ccc;
+    white-space: nowrap;
+  }
+
+  nav a {
+    font-size: 15px;
+    text-decoration: none;
+    color: grey;
+    border-bottom: 2px solid transparent;
+    white-space: nowrap;
+    margin: 0 40px;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    border-bottom: 3px solid #4e505b;
+    padding: 3px;
+  }
+
+  nav a.active {
+    border-bottom: 3px solid #4e505b;
+    padding: 3px;
+  }
+
+  nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    justify-content: center;
+    height: 10px;
+  }
+
+  nav li {
+    list-style-type: none;
+  }
+
+  .nav-content {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+
+  .footer {
+    padding: 10px;
+    color: white;
+    background-color: #4e505b;
+    margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .btn-bar {
+    background-color: dodgerblue;
+    border: none;
+    color: white;
+    padding: 3px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 1190px;
+  }
+
+  .btn-bar::before {
+    color: white;
+  }
+
+  .btn-edit {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 3px 15px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  .btn-exit {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 3px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 0;
+  }
+
+  .btn-bar,
+  .btn-exit,
+  .btn-edit {
+    border-radius: 5px;
+  }
+
+  .btn-bar:hover {
+    background-color: royalblue;
+  }
+
+  .btn-exit:hover {
+    background-color: #1b1c20;
+  }
+
+  .btn-edit:hover {
+    background-color: #1b1c20;
+  }
+
+  .button-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+  }
+
+  .button-btn h1 {
+    margin-bottom: 20px;
+  }

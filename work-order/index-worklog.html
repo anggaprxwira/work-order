@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MODAL : Log Worker</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="CSS/index-worklog.css">
+</head>
+
+<body>
+  <div class="button-btn">
+    <h1>Contoh Modal : Work Log</h1>
+    <button type="button" class="btn btn-primary" id="modal-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      TEKAN DISINI !
+    </button>
+  </div>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-fullscreen modal-dialog-scrollable">
+      <div class="modal-content">
+        <!-- <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Work Log</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div> -->
+        <div class="modal-body" id="modal-body">
+        <style>
+          
+        </style>
+          <div class="jumbotron">
+            <h5>Workorder Number : Sample-WO1033</h5>
+          </div>
+          <div class="content">
+            <div class="details-item">
+              <span>Vehicle Number:</span> NO63850237
+              <br><span>Vehicle name:</span> Sample Asset-5230
+              <br><span>Model:</span> 326F
+              <br><span>Meter Reading:</span> 1225555 Hours
+            </div>
+            <div class="details-item">
+              <span>Status:</span> <span class="notify"> On Hold</span>
+              <br><span>Priority:</span> Medium
+              <br><span>WO Type:</span> Safety
+            </div>
+            <div class="details-item">
+              <span>Start Date:</span> 08-Oct-2023 08:00 PM
+              <br><span>Due Date:</span> 08-Oct-2023 08:00 PM
+              <br><span>Completion Date:</span>
+              <br><span>Overdue: </span><span style="color: #00ba51;"><i class="fa fa-calendar"> 0 Days</i></span>
+            </div>
+            <div class="details-item">
+              <span>Estimated Time:</span> 72H
+              <br><span>Total Time:</span> 0H 0M
+              <br><span>Time difference: </span><span style="color: #00ba51;"><i class="fa fa-clock-o"> 72H 0M</i></span>
+            </div>
+            <div class="details-item">
+              <span>Estimated Cost:</span> 20000 USD
+              <br><span>Total WO Cost:</span> 250.00 USD
+              <br><span>Cost difference: </span><span style="color: #00ba51;"><i class="fa fa-dollar"> 19750 USD</i></span>
+            </div>
+          </div>
+
+          <nav>
+            <ul>
+              <li>
+                <a class="tab-links active" onclick="openTravel(event,'generaldetails')">GENERAL DETAILS</a>
+                <a class="tab-links" onclick="openTravel(event,'taskdetails')">TASK DETAILS</a>
+                <a class="tab-links" onclick="openTravel(event,'partsdetails')">PARTS DETAILS</a>
+                <a class="tab-links" onclick="openTravel(event,'labordetails')">LABOR DETAILS</a>
+                <a class="tab-links" onclick="openTravel(event,'additionalcost')">ADDITIONAL COST</a>
+                <a class="tab-links" onclick="openTravel(event,'attachments')">ATTACHMENTS</a>
+                <a class="tab-links" onclick="openTravel(event,'remark')">REMARK</a>
+                <a class="tab-links" onclick="openTravel(event,'timelog')">TIME LOG</a>
+              </li>
+            </ul>
+          </nav>
+          <div id="generaldetails" class="nav-content" style="display: block;">
+            <h3>GENERAL DETAILS</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div id="taskdetails" class="nav-content">
+            <h3>TASK DETAILS</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div id="partsdetails" class="nav-content">
+            <h3>PART DETAILS</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div id="labordetails" class="nav-content">
+            <h3>LABOR DETAILS</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div id="additionalcost" class="nav-content">
+            <h3>ADDITIONAL COST</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div id="attachments" class="nav-content">
+            <h3>ATTACHMENTS</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div id="remark" class="nav-content">
+            <h3>REMARK</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div id="timelog" class="nav-content">
+            <h3>TIME LOG</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="footer">
+          <a href="javascript:generatePDF()" id="convert"><button class="btn-bar" type="button" data-download=""><i class="fa fa-download"></i> Download</button></a>
+
+          <button class="btn-edit" type="button"><i class="fa fa-pencil"> Edit</i></button>
+
+          <button class="btn-exit" data-bs-dismiss="modal" type="button"><i class="fa fa-times" aria-label="Close"> Exit</i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.debug.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+  <script src="JSON/script.js"></script>
+
+  <script>
+    async function generatePDF() {
+      document.getElementById("convert").innerHTML;
+
+      var downloading = document.getElementById("modal-body");
+      var doc = new jsPDF('l', undefined, [342, 415]);
+
+      await html2canvas(downloading, {
+        //allowTaint: true,
+        //useCORS: true,
+      }).then((canvas) => {
+        doc.addImage(canvas.toDataURL("image/png"), 'PNG', 5, 5);
+      })
+
+      doc.save ("Log Worker.pdf");
+
+      document.getElementById("convert").innerHTML;
+    }
+  </script>
+
+</body>
+
+</html
